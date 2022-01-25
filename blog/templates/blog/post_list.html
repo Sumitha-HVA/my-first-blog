@@ -8,16 +8,12 @@
             <h1><a href="/">Django Blog</a></h1>
         </header>
 
-        <article>
-            <time>published: 14.06.2014, 12:14</time>
-            <h2><a href="">My first post</a></h2>
-            <p>A real friend is one who walks in when the rest of the world walks out.</p>
-        </article>
-
-        <article>
-            <time>published: 14.06.2014, 12:14</time>
-            <h2><a href="">My second post</a></h2>
-            <p>Hope is an optimistic state of mind that is based on an expectation of positive outcomes with respect to events and circumstances in one's life or the world at large.</p>
-        </article>
+        {% for post in posts %}
+            <article>
+                <time>published: {{ post.published_date }}</time>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </article>
+        {% endfor %}
     </body>
 </html>
