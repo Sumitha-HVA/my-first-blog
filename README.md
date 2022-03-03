@@ -1,8 +1,8 @@
 # Introduction
 This is a simple blog app which is developed using django in the backend and HTML, CSS in the frontend.
 # Requirements
-Python3, pip, virtualenv
-# Installation Instructions
+Python3, pip, virtualenv.
+# Installation Guide
 If you want to work with this project, please follow the instructions below:
 1. create a project folder
 >Windows :
@@ -35,9 +35,21 @@ If you want to work with this project, please follow the instructions below:
 ```   
 3. Install the project dependencies from  
 >*requirements.txt*
+
+requirements.txt file will contain the deatils of django version to install
 ```
       (myvenv) ~$ python -m pip install --upgrade pip
 ```   
+> Now, run the below command to install Django.
+```
+      pip install -r requirements.txt 
+```
+
 You have now successfully set up the project on your environment.
+
 # How to run the project
+Make sure your virtual environment is activated and then do the following each at a time.
+'''
+
+
 # Features
